@@ -23,36 +23,6 @@ namespace ATM_REG_CLONE
         {
             InitializeComponent();
         }
-       
-
-        private void btnStart_Click(object sender, EventArgs e)
-        {
-
-
-           
-        }
-        // close all chrome profile
-        private void btnClosechrome_Click(object sender, EventArgs e)
-        {
-            
-           
-            
-        }
-
-        private void btnStop_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPage2_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -224,30 +194,10 @@ namespace ATM_REG_CLONE
             sWriter.Flush();
             fs.Close();
 
-
-            /*
-            driver.Url = "https://www.facebook.com/nguyendacdau93";
-             
-            driver.Navigate();
-            Thread.Sleep(5000);
-            var tangsub = driver.FindElementByXPath("//*[@id=\"u_0_1c\"]/button[1]");
-            tangsub.Click();
-            Thread.Sleep(10000);
-             */
-
-            //driver.ExecuteScript("window.open()");
-            // driver.SwitchTo().Window(driver.WindowHandles[1]);
-            // driver.Url = "https://10minutemail.net/?lang=vi";
-            //driver.Navigate();
-
-            //Thread.Sleep(5000);
-            //driver.SwitchTo().Window(driver.WindowHandles[0]);
-            //Thread.Sleep(5000);
             driver.Close();
             driver.Quit();
 
             // xoa profile facebook1
-
             Thread.Sleep(3000);
             if (Directory.Exists(ProfileFolderPath + "\\" + ten))
             {
